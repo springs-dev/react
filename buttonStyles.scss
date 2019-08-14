@@ -1,0 +1,42 @@
+@import '../../../assets/styles/variables.scss';
+
+.salix-btn {
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    -webkit-box-shadow: 0px 19px 32px 0px rgba(77, 77, 77, 0.24);
+    box-shadow: 0px 19px 32px 0px rgba(77, 77, 77, 0.24);
+    display: block;
+    -webkit-border-radius: 30px;
+    border-radius: 30px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    border: none;
+    cursor: pointer;
+
+    &:hover, &:focus, &:active {
+        transition: 0.3s;
+        text-decoration: none;
+        outline: none;
+    }
+
+    &:hover, &:active {
+        box-shadow: none;
+    }
+
+
+
+    &--colored {
+        font-family: "AvenirNextCyr-Bold", sans-serif;
+        color: white;
+        background-color: $purpleColor;
+        line-height: 40px;
+    }
+
+    &--white {
+        line-height: 30px;
+        font-family: "AvenirNextCyr-Medium", sans-serif;
+        color: $purpleColor;
+        background-color: white;
+    }
+}
